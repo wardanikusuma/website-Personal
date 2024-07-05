@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Buku Tersedia - Heaven Book Store</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="stylebooks.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert2 library -->
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo-container">
+                <div class="header__logo-img-cont">
+                    <img src="assets/png/logo.png" alt="Heaven Book Logo Image" class="header__logo-img" />
+                </div>
+                <span class="header__logo-sub animate__animated animate__backInDown">Heaven Book</span>
+            </div>
+            <div class="header__main">
+                <ul class="header__links">
+                    <li class="header__link-wrapper">
+                        <a href="./indeks.html" class="header__link animate__animated animate__backInDown"> Home </a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <a href="./Books.html" class="header__link animate__animated animate__backInLeft"> Book </a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <a href="./Order.html" class="header__link animate__animated animate__backInRight"> Borrowing
+                        </a>
+                    </li>
+                </ul>
+                <div class="header__main-ham-menu-cont">
+                    <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+                    <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+                        class="header__main-ham-menu-close d-none" />
+                </div>
+            </div>
+        </div>
+        <div class="header__sm-menu">
+            <div class="header__sm-menu-content">
+                <ul class="header__sm-menu-links">
+                    <li class="header__sm-menu-link">
+                        <a href="./indeks.html"> Home </a>
+                    </li>
+                    <li class="header__sm-menu-link">
+                        <a href="./books.html"> Book </a>
+                    </li>
+                    <li class="header__sm-menu-link">
+                        <a href="./order.html"> Borrowing </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="products">
+        <h2>Our Products</h2>
+        <div class="all-products">
+            <div class="product" onclick="showProductInfo('Filosofi Teras', '$129', 'images.jpeg')">
+                <img src="images.jpeg" alt="Filosofi Teras">
+                <div class="product-info">
+                    <h4 class="product-title">Filosofi Teras</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('Selamat Tinggal', '$299', 'download (1).jpeg')">
+                <img src="download (1).jpeg" alt="Selamat Tinggal">
+                <div class="product-info">
+                    <h4 class="product-title">Selamat Tinggal</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('Emotional Intelligence', '$999', 'download.jpeg')">
+                <img src="download.jpeg" alt="Emotional Intelligence">
+                <div class="product-info">
+                    <h4 class="product-title">Emotional Intelligence</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('Bicara Itu Ada Seninya', '$629', 'download (2).jpeg')">
+                <img src="download (2).jpeg" alt="Bicara Itu Ada Seninya">
+                <div class="product-info">
+                    <h4 class="product-title">Bicara Itu Ada Seninya</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('healing dalam hening', '$629', 'healing dalam hening.jpeg')">
+                <img src="Healing dalam hening.jpeg" alt="healing dalam hening">
+                <div class="product-info">
+                    <h4 class="product-title">Healing Dalam Hening</h4>
+                </div>
+            </div>
+            <div class="product"
+                onclick="showProductInfo('maaf tuhan aku hampir menyerah', '$629', 'maaf tuhan aku hampir menyerah.jpeg')">
+                <img src="maaf tuhan aku hampir menyerah.jpeg" alt="maaf tuhan aku hampir menyerah">
+                <div class="product-info">
+                    <h4 class="product-title">Maaf Tuhan Aku Hampir Menyerah</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('islam an dunia', '$629', 'islam an dunia.jpeg')">
+                <img src="islam an dunia.jpeg" alt="islam an dunia">
+                <div class="product-info">
+                    <h4 class="product-title">Islam & Dunia</h4>
+                </div>
+            </div>
+            <div class="product"
+                onclick="showProductInfo('secret of divine love', '$629', 'secret of divine love.jpeg')">
+                <img src="secrets of divine love.jpeg" alt="secret of divine love">
+                <div class="product-info">
+                    <h4 class="product-title">Secret Of Divine Love</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('semua ada waktunya', '$629', 'semua ada waktunya.jpeg')">
+                <img src="semua ada waktunya.jpeg" alt="semua ada waktunya">
+                <div class="product-info">
+                    <h4 class="product-title">Semua Ada Waktunya</h4>
+                </div>
+            </div>
+            <div class="product"
+                onclick="showProductInfo('the miracle of ikhlas', '$629', 'the miracle of ikhlas.jpeg')">
+                <img src="the miracle of ikhlas.jpeg" alt="the miracle of ikhlas">
+                <div class="product-info">
+                    <h4 class="product-title">The Miracle Of Ikhlas</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('bulan', '$629', 'bulan.jpeg')">
+                <img src="bulan.jpeg" alt="bulan">
+                <div class="product-info">
+                    <h4 class="product-title">Bulan</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('dewasa', '$629', 'dewasa.jpeg')">
+                <img src="dewasa.jpeg" alt="dewasa">
+                <div class="product-info">
+                    <h4 class="product-title">Dewasa</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('hello habits', '$629', 'hello habits.jpeg')">
+                <img src="hello habits.jpeg" alt="hello habits">
+                <div class="product-info">
+                    <h4 class="product-title">Hello, Habits</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('kata', '$629', 'kata.jpeg')">
+                <img src="kata.jpeg" alt="kata">
+                <div class="product-info">
+                    <h4 class="product-title">Kata</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('negeri para badebah', '$629', 'negeri para badebah.jpeg')">
+                <img src="negeri para badebah.jpeg" alt="negeri para badebah">
+                <div class="product-info">
+                    <h4 class="product-title">Negeri Para Badebah</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('orang orang biasa', '$629', 'orang orang biasa.jpeg')">
+                <img src="orang orang biasa.jpeg" alt="orang orang biasa">
+                <div class="product-info">
+                    <h4 class="product-title">Orang - Orang Biasa</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('perahu kertas', '$629', 'perahu kertas.jpeg')">
+                <img src="perahu kertas.jpeg" alt="perahu kertas">
+                <div class="product-info">
+                    <h4 class="product-title">Perahu Kertas</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('pulang pergi', '$629', 'pulang pergi.jpeg')">
+                <img src="pulang pergi.jpeg" alt="pulang pergi">
+                <div class="product-info">
+                    <h4 class="product-title">Pulang Pergi</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('rentang waktu', '$629', 'rentang waktu.jpeg')">
+                <img src="rentang waktu.jpeg" alt="rentang waktu">
+                <div class="product-info">
+                    <h4 class="product-title">Rentang Waktu</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('00', '$629', '00.jpeg')">
+                <img src="00.jpeg" alt="00">
+                <div class="product-info">
+                    <h4 class="product-title">00.00</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('ayat ayat cinta 2', '$629', 'ayat ayat cinta 2.jpeg')">
+                <img src="ayat ayat cinta 2.jpeg" alt="ayat ayat cinta 2">
+                <div class="product-info">
+                    <h4 class="product-title">Ayat-ayat Cinta 2</h4>
+                </div>
+            </div>
+            <div class="product" onclick="showProductInfo('yes to life', '$629', 'yes to life.jpeg')">
+                <img src="yes to life.jpeg" alt="yes to life">
+                <div class="product-info">
+                    <h4 class="product-title">Yes to Life</h4>
+                </div>
+            </div>
+
+        </div>
+        <div id="message-container" class="message" style="display:none;"></div>
+
+        <script>
+            function showProductInfo(title, price, imgSrc) {
+                const messageContainer = document.getElementById('message-container');
+                messageContainer.innerHTML = `
+                    <h4>${title}</h4>
+                    <p>${price}</p>
+                    <img src="${imgSrc}" alt="${title}">
+                `;
+                messageContainer.style.display = 'block';
+            }
+        </script>
+        <footer class="main-footer">
+            <div class="main-container">
+                <div class="main-footer__upper">
+                    <div class="main-footer__row main-footer__row-2">
+                        <h4 class="heading heading-sm text-lt">Heaven Book</h4>
+                        <p class="main-footer__short-desc">
+                            Untuk informasi lebih lanjut, hubungi kami di nomor berikut:<br>
+                            081234567890
+                        </p>
+                    </div>
+                </div>
+                <div class="main-footer__lower">
+                    &copy; Copyright 2024. Made by Heaven Book
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>

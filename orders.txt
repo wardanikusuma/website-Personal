@@ -1,0 +1,22 @@
+
+Nama: Tia Kusuma Wardani
+Email: pelajar13@uad.ac.id
+Nomor Telepon: 081239995321
+Buku yang dipinjam:
+
+Nama: weni wendari
+Email: pelajar5@uad.ac.id
+Nomor Telepon: +6281239995321
+Tanggal Peminjaman: 
+Tanggal Pengembalian: 
+Buku yang dipinjam:
+
+Name: weni wendari
+Email: 2300018204@webmail.uad.ac.id
+Phone: +6281239995321
+Date: 2024-07-31
+Books:
+- Filosofi Teras
+- ayat ayat cinta 2
+
+---

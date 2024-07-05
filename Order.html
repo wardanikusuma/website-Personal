@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Order - Heaven Book Store</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="styleorder.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo-container">
+                <div class="header__logo-img-cont">
+                    <img src="assets/png/logo.png" alt="Heaven Book  Logo Image" class="header__logo-img" />
+                </div>
+                <span class="header__logo-sub animate__animated animate__backInDown">Heaven Book Store</span>
+            </div>
+            <div class="header__main">
+                <ul class="header__links">
+                    <li class="header__link-wrapper">
+                        <a href="./indeks.html" class="header__link animate__animated animate__backInDown"> Home </a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <a href="./Books.html" class="header__link animate__animated animate__backInLeft"> Book </a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <a href="./Order.html" class="header__link animate__animated animate__backInRight"> Borrowing
+                        </a>
+                    </li>
+                </ul>
+                <div class="header__main-ham-menu-cont">
+                    <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+                    <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+                        class="header__main-ham-menu-close d-none" />
+                </div>
+
+            </div>
+        </div>
+        <div class="header__sm-menu">
+            <div class="header__sm-menu-content">
+                <ul class="header__sm-menu-links">
+                    <li class="header__sm-menu-link">
+                        <a href="./indeks.html"> Home </a>
+                    </li>
+                    <li class="header__sm-menu-link">
+                        <a href="./books.html"> Book </a>
+                    </li>
+                    <li class="header__sm-menu-link">
+                        <a href="./order.html"> Borrowing </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="order">
+        <div class="main-container">
+            <h2 class="heading heading-sec heading-sec__mb-med">
+                <span class="heading-sec__main animate__animated animate__backInLeft">Form Order</span>
+            </h2>
+            <form action="submit_order.php" method="POST" class="order__form">
+                <label for="name">Nama :</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="phone">Nomor Telepon:</label><br>
+                <input type="text" id="phone" name="phone" required><br><br>
+                <label="phone">Tanggal Peminjaman :</label><br>
+                    <input type="date" id="datemax" name="datemax" max="2025-12-31"><br><br>
+                    <label for="phone">Tanggal Pengembalian :</label><br>
+                    <input type="date" id="datemax" name="datemax" max="2025-12-31"><br><br>
+                    <label for="book">Buku:</label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="Filosofi Teras" required> Filosofi Teras
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="Selamat Tinggal"> Selamat Tinggal
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="Emotional Intelligence"> Emotional Intelligence
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="Bicara Itu Ada Seninya"> Bicara Itu Ada Seninya
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="maaf tuhan aku hampir menyerah"> Maaf Tuhan Aku Hampir
+                        Menyerah
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="secret of divine"> Secret Of Divine Love
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="islam an dunia"> Islam & Dunia
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="healing dalam hening"> Healing Dalam Heaning
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="hello habits"> Hello,Habits
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="kata"> Kata
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="negeri para badebah"> Negeri Para Badebah
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="orang orang biasa"> Orang-orang Biasa
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="perahu kertas"> Perahu Kertas
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="pulang pergi"> Pulang Pergi
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="rentang waktu"> Rentang Waktu
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="yes to life"> Yes to Life
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="semua ada waktunya"> Semua ada Waktunya
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="dewasa"> Dewasa
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="00"> 00.00
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="Bulan"> Bulan
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="ayat ayat cinta 2"> Ayat-ayat Cinta 2
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="book" value="the miracle of ikhlas"> The Miracle Of Ikhlas
+                    </label><br><br>
+
+                    <button type="submit" class="btn btn--bg">Pinjam</button>
+            </form>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="main-container">
+            <div class="main-footer__upper">
+                <div class="main-footer__row main-footer__row-2">
+                    <h4 class="heading heading-sm text-lt">Heaven Book</h4>
+                    <p class="main-footer__short-desc">
+                        Untuk informasi lebih lanjut, hubungi kami di nomor berikut:<br>
+                        081239995321
+                    </p>
+                </div>
+            </div>
+            <div class="main-footer__lower">
+                &copy; Copyright 2024. Made by Heaven Book Store
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

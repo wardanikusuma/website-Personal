@@ -1,0 +1,151 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    background-color: #f0f0f0;
+    /* Warna latar belakang */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Header styling */
+.header {
+    background-color: #064157;
+    /* Warna latar belakang header */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.header__logo-sub {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.header__links {
+    list-style-type: none;
+    display: flex;
+}
+
+.header__link-wrapper {
+    margin-right: 20px;
+}
+
+.header__link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header__link:hover {
+    color: #ffd700;
+    /* Warna teks hover */
+}
+
+/* Section styling */
+.order {
+    margin-top: 40px;
+}
+
+.heading-sec__main {
+    font-size: 2.5rem;
+    color: #064157;
+    /* Warna judul */
+}
+
+.order__form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    /* Efek bayangan */
+}
+
+.order__form label {
+    font-weight: bold;
+}
+
+.order__form input[type="text"],
+.order__form input[type="email"],
+.order__form input[type="checkbox"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.order__form button[type="submit"] {
+    background-color: #064157;
+    /* Warna latar belakang tombol */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.order__form button[type="submit"]:hover {
+    background-color: #ffd700;
+    /* Warna latar belakang tombol hover */
+}
+
+/* Footer styling */
+.main-footer {
+    background-color: #064157;
+    /* Warna latar belakang footer */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.main-footer__upper {
+    padding-bottom: 20px;
+}
+
+.main-footer__short-desc {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+.main-footer__lower {
+    background-color: #042538;
+    /* Warna latar belakang bagian bawah footer */
+    padding: 10px 0;
+    font-size: 12px;
+}
